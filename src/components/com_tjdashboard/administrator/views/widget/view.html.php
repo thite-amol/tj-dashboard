@@ -1,11 +1,13 @@
 <?php
-
 /**
- * @package    Com_Tjdashboard
- * @author     Techjoomla <extensions@techjoomla.com>
- * @copyright  2017 Techjoomla
- * @license    GNU General Public License version 2 or later; see LICENSE.txt
+ * @package     TjDashboard
+ * @subpackage  com_tjdashboard
+ *
+ * @author      Techjoomla <extensions@techjoomla.com>
+ * @copyright   Copyright (C) 2009 - 2019 Techjoomla. All rights reserved.
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
+
 // No direct access
 defined('_JEXEC') or die;
 

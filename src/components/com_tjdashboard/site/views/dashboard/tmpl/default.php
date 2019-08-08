@@ -13,7 +13,6 @@ defined('_JEXEC') or die;
 
 JHTML::_('behavior.modal');
 
-
 $document = JFactory::getDocument();
 
 $document->addStylesheet('components/com_tjdashboard/assets/css/dashboard.css');
@@ -25,7 +24,7 @@ $document->addStylesheet('media/com_tjdashboard/css/tjdashboard-sb-admin.css');
 
 <script>
 jQuery(document).ready(function() {
-		TJDashboardUI.initDashboard(<?php echo ($this->item->state == 1? $this->item->dashboard_id : 0); ?>);
+		TJDashboardUI.initDashboard(<?php echo $this->item->state == 1? $this->item->dashboard_id : 0; ?>);
 	});
 </script>
 

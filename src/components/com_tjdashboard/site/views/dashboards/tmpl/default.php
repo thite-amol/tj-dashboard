@@ -11,7 +11,6 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
-
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
 
 JHtml::_('bootstrap.tooltip');
@@ -33,7 +32,7 @@ if ($saveOrder)
 	<div class="row-fluid">
 		<form action="<?php echo JRoute::_('index.php?option=com_tjdashboard&view=dashboards'); ?>" method="post" name="adminForm" id="adminForm">
 			<?php
-			if (!empty( $this->sidebar))
+			if (!empty($this->sidebar))
 			{
 				?>
 				<div id="j-sidebar-container" class="span2">

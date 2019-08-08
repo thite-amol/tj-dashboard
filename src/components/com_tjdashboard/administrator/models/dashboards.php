@@ -1,11 +1,11 @@
 <?php
 /**
- * @package     TJDashboard
+ * @package     TjDashboard
  * @subpackage  com_tjdashboard
  *
  * @author      Techjoomla <extensions@techjoomla.com>
- * @copyright   Copyright (C) 2009 - 2018 Techjoomla. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @copyright   Copyright (C) 2009 - 2019 Techjoomla. All rights reserved.
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
 // No direct access to this file
@@ -56,7 +56,7 @@ class TjdashboardModelDashboards extends JModelList
 		$query = $db->getQuery(true);
 
 		// Create the base select statement.
-		$query->select(['dash.*','users.name']);
+		$query->select(['dash.*', 'users.name']);
 		$query->from($db->quoteName('#__tj_dashboards', 'dash'));
 		$query->join('LEFT', $db->quoteName('#__users', 'users') . ' ON (' . $db->quoteName('dash.created_by') . ' = ' . $db->quoteName('users.id') . ')');
 

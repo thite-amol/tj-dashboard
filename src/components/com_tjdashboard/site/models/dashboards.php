@@ -1,17 +1,15 @@
 <?php
 /**
- * @package     TJDashboard
+ * @package     TjDashboard
  * @subpackage  com_tjdashboard
  *
  * @author      Techjoomla <extensions@techjoomla.com>
- * @copyright   Copyright (C) 2009 - 2018 Techjoomla. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @copyright   Copyright (C) 2009 - 2019 Techjoomla. All rights reserved.
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
 // No direct access.
 
 defined('_JEXEC') or die;
 
-use Joomla\Registry\Registry;
-use Joomla\Utilities\ArrayHelper;
 JLoader::import('components.com_tjdashboard.models.dashboards', JPATH_ADMINISTRATOR);

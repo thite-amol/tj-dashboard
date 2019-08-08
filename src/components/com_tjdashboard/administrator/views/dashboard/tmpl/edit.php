@@ -11,8 +11,6 @@
 // No direct access
 defined('_JEXEC') or die;
 
-use Joomla\Registry\Registry;
-
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
 
 JHtml::_('behavior.formvalidator');

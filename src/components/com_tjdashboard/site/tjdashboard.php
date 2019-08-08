@@ -1,11 +1,11 @@
 <?php
 /**
- * @package     TJDashboard
+ * @package     TjDashboard
  * @subpackage  com_tjdashboard
  *
  * @author      Techjoomla <extensions@techjoomla.com>
- * @copyright   Copyright (C) 2009 - 2018 Techjoomla. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @copyright   Copyright (C) 2009 - 2019 Techjoomla. All rights reserved.
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
 defined('_JEXEC') or die;
@@ -32,7 +32,6 @@ if ($tjdashboardparams->get('load_bootstrap') == 1)
 }
 
 define('COM_TJDASHBOARD_WRAPPER_DIV', 'tjBs3');
-
 
 // Execute the task.
 $controller = JControllerLegacy::getInstance('Tjdashboard');

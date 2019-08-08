@@ -1,11 +1,11 @@
 <?php
 /**
- * @package     TJDashboard
+ * @package     TjDashboard
  * @subpackage  com_tjdashboard
  *
  * @author      Techjoomla <extensions@techjoomla.com>
- * @copyright   Copyright (C) 2009 - 2018 Techjoomla. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @copyright   Copyright (C) 2009 - 2019 Techjoomla. All rights reserved.
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
 // No direct access.
@@ -35,12 +35,12 @@ class TjdashboardModelWidgets extends JModelList
 				'dashboard_id', 'dash.dashboard_id',
 				'state', 'wid.state',
 				'title', 'wid.title',
-				'dashboard_name','dashboard_name',
-				'renderer_plugin','wid.renderer_plugin',
-				'data_plugin','wid.data_plugin',
+				'dashboard_name', 'dashboard_name',
+				'renderer_plugin', 'wid.renderer_plugin',
+				'data_plugin', 'wid.data_plugin',
 				'created_by', 'wid.created_by',
 				'ordering', 'wid.ordering',
-				'size','wid.size'
+				'size', 'wid.size',
 				);
 		}
 
@@ -123,7 +123,7 @@ class TjdashboardModelWidgets extends JModelList
 		}
 		else
 		{
-			$query->order(array($db->quoteName('wid.dashboard_id'),$db->quoteName('wid.ordering')));
+			$query->order(array($db->quoteName('wid.dashboard_id'), $db->quoteName('wid.ordering')));
 		}
 
 		return $query;

@@ -11,7 +11,6 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
-
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
 
 JHtml::_('bootstrap.tooltip');
@@ -22,7 +21,7 @@ $listOrder = $this->escape($this->state->get('list.ordering'));
 $listDirn  = $this->escape($this->state->get('list.direction'));
 $saveOrder = $listOrder == 'dash.ordering';
 
-if ( $saveOrder )
+if ($saveOrder)
 {
 	$saveOrderingUrl = 'index.php?option=com_tjdashboard&task=dashboards.saveOrderAjax';
 	JHtml::_('sortablelist.sortable', 'dashboardsList', 'adminForm', strtolower($listDirn), $saveOrderingUrl);
@@ -33,7 +32,7 @@ if ( $saveOrder )
 	<div class="row-fluid">
 		<form action="<?php echo JRoute::_('index.php?option=com_tjdashboard&view=dashboards'); ?>" method="post" name="adminForm" id="adminForm">
 
-			<?php if (!empty( $this->sidebar))
+			<?php if (!empty($this->sidebar))
 			{
 			?>
 				<div id="j-sidebar-container" class="span2">

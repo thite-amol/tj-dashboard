@@ -11,8 +11,6 @@
 // No direct access
 defined('_JEXEC') or die;
 
-use Joomla\Registry\Registry;
-
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
 
 JHtml::_('behavior.formvalidator');
@@ -60,7 +58,7 @@ JFactory::getDocument()->addScriptDeclaration('
 				<fieldset class="adminform">
 					<?php
 						echo $this->form->renderField('title');
-						
+
 						echo $this->form->renderField('dashboard_id');
 
 						echo $this->form->renderField('state');

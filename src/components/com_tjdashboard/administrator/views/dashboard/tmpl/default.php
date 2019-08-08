@@ -11,7 +11,6 @@
 // No direct access
 defined('_JEXEC') or die;
 
-
 $document = JFactory::getDocument();
 $document->addStyleSheet(JUri::root() . '/media/techjoomla_strapper/bs3/css/bootstrap.css');
 $document->addStylesheet(Juri::root() . 'components/com_tjdashboard/assets/css/dashboard.css');
@@ -22,13 +21,13 @@ $document->addStylesheet(Juri::root() . 'media/com_tjdashboard/css/tjdashboard-s
 
 <script>
 jQuery(document).ready(function() {
-	TJDashboardUI.initDashboard(<?php echo ($this->item->state == 1? $this->item->dashboard_id : 0); ?>);
+	TJDashboardUI.initDashboard(<?php echo $this->item->state == 1? $this->item->dashboard_id : 0; ?>);
 });
 </script>
 
 <div class="tjBs3 tjlms-wrapper">
 	<div class="row-fluid">
-		<?php if (!empty( $this->sidebar))
+		<?php if (!empty($this->sidebar))
 		{
 		?>
 			 <div id="j-sidebar-container" class="span2">
